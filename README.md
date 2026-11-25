@@ -9,3 +9,10 @@ som JSON med sorterede nøgler. Saltet og indholdet offentliggøres ikke; arkive
 beslutning bevises ved at offentliggøre dens indhold, salt og forrige hash.
 
 Filen er kun-tilføj: linjer ændres eller slettes aldrig; nye beslutninger tilføjes til sidst.
+
+## modanalyser.csv
+
+Én linje pr. modanalyse (djævlens advokat og dommer efter fondens dybdeanalyse, S18): `id` (modanalysens nummer),
+`registreret_utc` og `sha256` (fingeraftrykket af advokat.md, advokat.json, dom.md og dom.json: SHA-256 af linjerne
+`<sha256>  <fil>` sorteret efter filnavn, som `sha256sum`). Modanalysen er en anbefaling til Henrik; den ændrer aldrig
+forslaget. Filen er kun-tilføj som `beslutninger.csv`.
